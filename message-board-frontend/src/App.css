@@ -1,38 +1,65 @@
+/* General styling for the entire application */
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  padding-top: 45px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main-content {
+  padding-top: 200px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.bg-custom-light {
+  background-color: #ffffff;
+}
+
+.bg-custom-info {
+  background-color: white;
+  position: relative;
+}
+
+.bg-custom-info::before,
+.bg-custom-info::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 10px; /* Adjust as needed */
+  box-shadow: 10px 0px 20px 5px rgba(169, 169, 169, 0.5);
+}
+
+.bg-custom-info::before {
+  left: -10px;
+}
+
+.bg-custom-info::after {
+  right: -10px;
+}
+
+/* Box shadow for the dark background section */
+.bg-custom-dark {
+  background-color: #ffffff;
+  box-shadow: 0px 10px 20px 10px rgba(169, 169, 169, 0.5);
+}
+
+.full-height-section {
+  height: 100vh;
+}
+
+.full-height-background {
+  height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Sticky side panel styling */
+.col-md-3,
+.col-md-6 {
+  position: sticky;
+  top: 56px; 
+  height: calc(100vh - 56px);
+  overflow-y: auto;
 }
