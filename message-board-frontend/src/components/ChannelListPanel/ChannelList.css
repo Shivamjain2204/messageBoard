@@ -1,0 +1,32 @@
+.ChannelList {
+    margin-top: 35px;
+  }
+  
+  .ChannelList .custom-title {
+    background-color: #016FB9;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 40px;
+    color: rgb(255, 255, 255);
+    border: 2px solid #016FB9;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: x-large;
+    font-weight: 600;
+  }
+  
+  .ChannelList .channel-item {
+    margin-bottom: 15px;
+    border: 2px solid #016FB9;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .ChannelList .channel-item:hover {
+    background-color: #3199df;
+  }
+  
+  .ChannelList .channel-item.active {
+    background-color: #016FB9;
+    color: #fff;
+  }
+  
