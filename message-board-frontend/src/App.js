@@ -14,7 +14,7 @@ const App = () => {
   const [messages, setMessages] = useState([]);
   const [newMessage, setNewMessage] = useState('');
   const [enteredName, setEnteredName] = useState('');
-  const [showNameModal, setShowNameModal] = useState(false);
+
 
   useEffect(() => {
     // Fetch initial channel list
